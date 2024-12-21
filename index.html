@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planetary weight calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <h1>Planetary Weight Calculator</h1>
+        <label for="weight">Enter your weight (in kg):</label>
+        <input type="number" id="weight" placeholder="weight in kg" required>
+        <label for="planet">Choose a planet</label>
+        <select id="planet">
+            <option value="mercury">Mercury</option>
+            <option value="venus">Venus</option>
+            <option value="earth">Earth</option>
+            <option value="mars">Mars</option>
+            <option value="jupiter">Jupiter</option>
+            <option value="saturn">Saturn</option>
+            <option value="uranus">Uranus</option>
+            <option value="neptune">Neptune</option>
+            <option value="moon">Moon</option>
+            <option value="pluto">Pluto</option>
+        </select>
+
+        <button onclic="calculateWeight()">Calculate</button>
+        <button onclick="resetCalculator()">Reset</button>
+        
+        <p id="result"></p>
+        <p id="planet-fact"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
